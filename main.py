@@ -38,7 +38,11 @@ def ask_openai():
             ]
         }
 
+        # Make request to OpenAI
         response = requests.post(openai_url, headers=headers, data=json.dumps(data))
+
+        # Return only OpenAI's message response
+        return response.json()["choices"][0]["message"]["content"];
 
     except Exception as e:
         abort(500, description="Failed to make OpenAI request")
