@@ -33,3 +33,5 @@ To deploy a new version, do the following:
 4. Service name should be `open-ai-service`. You can change the name
 5. Region should be `us-central1`
 6. For now, we are allowing unauthenticated invocations
+
+For more information on deploying to Google Cloud, read their docs [here](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service#deploy).
