@@ -21,7 +21,10 @@ This command will build a Docker image with the name specified after `-t`
 ```shell
 docker run -p 8080:8080 open-ai-service
 ```
-You can now make requests to your local dockerfile using `localhost:8080`.
+You can now make requests to your local dockerfile using `localhost:8080/open-ai-service`. In the request body, be sure to include the following:
+{
+    "prompt": <user_prompt>
+}
 
 # Deploying to Cloud Run
 
